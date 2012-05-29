@@ -1,35 +1,63 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @hacker.name %>
-</p>
-
-<p>
-  <b>Surname:</b>
-  <%= @hacker.surname %>
-</p>
-
-<p>
-  <b>Nickname:</b>
-  <%= @hacker.nickname %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @hacker.email %>
-</p>
-
-<p>
-  <b>Bio:</b>
-  <%= @hacker.bio %>
-</p>
-
-<p>
-  <b>Avatar:</b>
-  <%= image_tag(@hacker.avatar, :width => 150) if @hacker.avatar.present? %>
-</p>
-
-
 <%= link_to 'Edit', edit_hacker_path(@hacker) %> |
 <%= link_to 'Back', hackers_path %>
+
+<div id="content">
+	<div id="data">
+		<p id="notice">
+			<%= notice %>
+		</p>
+		<%= image_tag(@hacker.avatar, :width => 150) if @hacker.avatar.present? %>
+		<h1><%= @hacker.name %> <%= @hacker.nickname %> <%= @hacker.surname %></h1>
+		<p>
+			<%= @hacker.bio %>
+		</p>
+		<h3>Tags:</h3>
+		<ul class="inlineList">
+			<li>
+				<a href="">fun</a>
+			</li>
+			<li>
+				<a href="">CSS3</a>
+			</li>
+			<li>
+				<a href="">HTML5</a>
+			</li>
+		</ul>
+		<br />
+		<h3>Contact:</h3>
+		<ul class="inlineList">
+			<li>
+				<%= @hacker.email %>
+			</li>
+			<li>
+				<a href="">facebook</a>
+			</li>
+			<li>
+				<a href="">twitter</a>
+			</li>
+		</ul>
+	</div>
+
+	<aside>
+		<h2>Projects:</h2>
+		<div id="projects">
+			<ul>
+				<li>
+					<a href="">Project 1</a>
+				</li>
+				<li>
+					<a href="">Awsome Projects 2</a>
+				</li>
+				<li>
+					<a href="">The Best Project 3</a>
+				</li>
+				<li>
+					<a href="">Project 4</a>
+				</li>
+				<li>
+					<a href="">Project 5</a>
+				</li>
+			</ul>
+		</div>
+	</aside>
+</div>
