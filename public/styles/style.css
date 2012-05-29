@@ -1,13 +1,5 @@
-/*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
- *= require_self
- *= require_tree . 
-*/
-
-/* CSS Reset */
-body {
+﻿/* CSS Reset */
+{
     margin: 0;
     padding: 0;
 }
@@ -24,7 +16,7 @@ body {
 	width: 900px;
 	font: 13px Helvetica, Arial, sans-serif;
 	background: #EBEBEB;
-	background: url("background.png");
+	background: url("../images/background.png");
 	}
 	
 h1, h2, h3 {
@@ -73,7 +65,7 @@ form input {
 		-webkit-box-shadow: 0 5px 25px -5px #000000;
 		-moz-box-shadow: 0 5px 25px -5px #000000;
 	background: #EBEBEB;
-	/*background: url("grid-small.png");*/
+	/*background: url("../images/grid-small.png");*/
 	text-align: center;
 	}
 	form input:focus {
@@ -88,7 +80,7 @@ header {
 	width: 100%;
 	height: 150px;
 	background: #FFF;
-	background: url("grid-small.png");
+	background: url("../images/grid-small.png");
 	border-left: 1px dashed #7C7C7C;
 	border-bottom: 1px dashed #7C7C7C;
 	border-right: 1px dashed #7C7C7C;
@@ -118,7 +110,7 @@ header {
 		width: 540px;
 		height: 85px;
 		background: #EBEBEB;
-		background: url("background.png");
+		background: url("../images/background.png");
 		box-shadow: inset 0 5px 25px -5px #000000;
 			-webkit-box-shadow: inset 0 5px 25px -5px #000000;
 			-moz-box-shadow: inset 0 5px 25px -5px #000000;		
@@ -240,7 +232,7 @@ footer {
 		-webkit-box-shadow: 0 5px 25px -5px #000000;
 		-moz-box-shadow: 0 5px 25px -5px #000000;
 	background: #FFF;
-	background: url("grid-small.png");
+	background: url("../images/grid-small.png");
 	text-align: center;
 	}
 		
@@ -257,7 +249,7 @@ footer {
 		-webkit-box-shadow: 0 5px 25px -5px #000000;
 		-moz-box-shadow: 0 5px 25px -5px #000000;
 	background: #FFF;
-	background: url("grid-small.png");
+	background: url("../images/grid-small.png");
 	text-align: center;
 	}
 

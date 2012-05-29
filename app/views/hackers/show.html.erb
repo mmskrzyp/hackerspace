@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @hacker.name %>
+</p>
+
+<p>
+  <b>Surname:</b>
+  <%= @hacker.surname %>
+</p>
+
+<p>
+  <b>Nickname:</b>
+  <%= @hacker.nickname %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @hacker.email %>
+</p>
+
+<p>
+  <b>Bio:</b>
+  <%= @hacker.bio %>
+</p>
+
+<p>
+  <b>Avatar:</b>
+  <%= image_tag(@hacker.avatar, :width => 150) if @hacker.avatar.present? %>
+</p>
+
+
+<%= link_to 'Edit', edit_hacker_path(@hacker) %> |
+<%= link_to 'Back', hackers_path %>
