@@ -52,7 +52,7 @@ img {
 	border: none;
 }
 
-form input {
+#loginBar form input {
 	display: block;
 	width: 150px;
 	padding: 5px;
@@ -67,9 +67,6 @@ form input {
 	background: #EBEBEB;
 	/*background: url("grid-small.png");*/
 	text-align: center;
-}
-form input:focus {
-
 }
 
 /* Header */

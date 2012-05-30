@@ -14,13 +14,13 @@
 	</head>
 	<body>
 		<header>
-		<a href="index.html"><img id="logo" src="images/hackerspace-logo.png" alt="Hackerspace Kraków logo" /></a>
+		<a href="index.html"><%= image_tag("hackerspace-logo.png", :id=>'logo') %></a>
 		<nav>
 			<div class="outline">
 				<ul>
-					<li><a href="projects.html">Projects</a></li>
+					<li><%= link_to 'Projects', projects_path %></li>
 					<li><a href="events.html">Events</a></li>
-					<li><a href="hackers.html">Hackers</a></li>
+					<li><%= link_to 'Hackers', hackers_path %></li>
 					<li><a href="http://blog.hackerspace-krk.pl/">Blog</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -38,9 +38,9 @@
 			<ul>
 				<li class="current"><a href="index.html">Home Page</a></li>
 				<li><a href="about.html">About</a></li>
-				<li><a href="projects.html">Projects</a></li>
+				<li><%= link_to 'Projects', projects_path %></li>
 				<li><a href="events.html">Events</a></li>
-				<li><a href="hackers.html">Hackers</a></li>
+				<li><%= link_to 'Hackers', hackers_path %></li>
 				<li><a href="http://blog.hackerspace-krk.pl/">Blog</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li><a href="sponsors.html">Sponsors</a></li>
