@@ -1,0 +1,280 @@
+/* CSS Reset */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Tell the browser to render HTML 5 elements as block */
+header, footer, aside, nav, article {
+	display: block;
+}
+
+/* Defaults */
+
+body {
+	margin: 0 auto;
+	width: 900px;
+	font: 13px Helvetica, Arial, sans-serif;
+	background: #EBEBEB;
+	background: url("background.png");
+}
+
+h1, h2, h3 {
+	color: #7C7C7C;
+	text-shadow: 1px 1px #FFF;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 13px;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #AB3E5B;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #B3CC57;
+	text-shadow: 1px 1px #FFF;
+}
+
+img {
+	border: none;
+}
+
+form input {
+	display: block;
+	width: 150px;
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 2px solid #7C7C7C;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 0 5px 25px -5px #000000;
+	-webkit-box-shadow: 0 5px 25px -5px #000000;
+	-moz-box-shadow: 0 5px 25px -5px #000000;
+	background: #EBEBEB;
+	/*background: url("grid-small.png");*/
+	text-align: center;
+}
+form input:focus {
+
+}
+
+/* Header */
+header {
+	position: top;
+	margin: 0;
+	margin-bottom: 50px;
+	width: 100%;
+	height: 150px;
+	background: #FFF;
+	background: url("grid-small.png");
+	border-left: 1px dashed #7C7C7C;
+	border-bottom: 1px dashed #7C7C7C;
+	border-right: 1px dashed #7C7C7C;
+	box-shadow: 0 5px 25px -5px #000000;
+	-webkit-box-shadow: 0 5px 25px -5px #000000;
+	-moz-box-shadow: 0 5px 25px -5px #000000;
+}
+
+header #logo {
+	margin: 10px 10px 10px 32px;
+	height: 130px;
+	float: left;
+}
+
+header nav {
+	position: relative;
+	top: 32px;
+	margin-left: auto;
+	margin-right: 32px;
+	width: 540px;
+	height: 85px;
+	border: 1px dashed #7C7C7C;
+}
+
+.outline {
+	margin: 0px;
+	width: 540px;
+	height: 85px;
+	background: #EBEBEB;
+	background: url("background.png");
+	box-shadow: inset 0 5px 25px -5px #000000;
+	-webkit-box-shadow: inset 0 5px 25px -5px #000000;
+	-moz-box-shadow: inset 0 5px 25px -5px #000000;
+}
+
+header nav .outline ul {
+	position: relative;
+	top: 34px;
+	margin: 0;
+	margin-left: -8px;
+	list-style: none;
+}
+
+header nav .outline ul li {
+	margin: 0 20px;
+	display: block;
+	height: 25px;
+	float: left;
+}
+
+header nav .outline ul li a {
+	font-size: 16px;
+}
+
+header #login {
+	display: none;
+}
+
+/* Content */
+#content {
+	display: table;
+	width: 100%;
+}
+
+#data {
+	display: table-cell;
+	width: 590px;
+	padding: 0 20px;
+}
+
+aside {
+	display: table-cell;
+	width: 200px;
+	border-left: 1px dashed #7C7C7C;
+	padding-left: 20px;
+}
+
+#projects ul {
+	list-style: none;
+	margin-left: -40px;
+	list-style: none;
+}
+
+#projects ul li {
+	margin-bottom: 10px;
+}
+
+.grayBackground {
+	background-color: #EBEBEB;
+	border: 1px solid #EBEBEB;
+	border-radius: 5px 5px 5px 5px;
+	width: 100%;
+	width: 610px;
+	padding: 15px;
+}
+
+/* Footer */
+footer {
+	margin-top: 50px;
+	position: bottom;
+	width: 100%;
+	height: 130px;
+	border-top: 1px dashed #7C7C7C;
+	text-align: center;
+}
+
+footer nav {
+	margin-left: 50px;
+}
+
+footer nav ul {
+	margin: 0;
+	margin-top: 34px;
+	list-style: none;
+}
+
+footer nav ul li {
+	margin: 0 20px;
+	display: block;
+	height: 25px;
+	float: left;
+}
+
+footer p, p a {
+	margin-top: 30px;
+	color: #7C7C7C;
+}
+
+/* Elements */
+.inlineList {
+	margin-left: -30px;
+	list-style: none;
+}
+
+.inlineList li {
+	margin-right: 15px;
+	float: left;
+}
+
+.button {
+	display: block;
+	padding: 5px;
+	border: 2px solid;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 0 5px 25px -5px #000000;
+	-webkit-box-shadow: 0 5px 25px -5px #000000;
+	-moz-box-shadow: 0 5px 25px -5px #000000;
+	background: #FFF;
+	background: url("grid-small.png");
+	text-align: center;
+}
+
+.bigButton {
+	display: block;
+	width: 150px;
+	margin-bottom: 20px;
+	padding: 40px 15px;
+	border: 2px solid;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 0 5px 25px -5px #000000;
+	-webkit-box-shadow: 0 5px 25px -5px #000000;
+	-moz-box-shadow: 0 5px 25px -5px #000000;
+	background: #FFF;
+	background: url("grid-small.png");
+	text-align: center;
+}
+
+.bigButtonBar {
+	height: 120px;
+	margin-left: 105px;
+}
+.bigButtonBar .bigButton {
+	height: 30px;
+	float: left;
+	margin-right: 20px;
+}
+
+#loginBar {
+	border: 1px dashed #7C7C7C;
+	width: 600px;
+	padding: 20px;
+	display: table;
+	/*display: none;*/
+}
+#loginBar form {
+	display: table-cell;
+	width: 150px;
+	padding-right: 20px;
+}
+
+a.current, .current a {
+	text-decoration: underline;
+}

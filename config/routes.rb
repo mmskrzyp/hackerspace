@@ -1,4 +1,6 @@
 Hackerspace::Application.routes.draw do
+  resources :projects
+
   resources :hackers
 
   # The priority is based upon order of creation:
