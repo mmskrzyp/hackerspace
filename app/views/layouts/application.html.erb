@@ -4,13 +4,12 @@
 		<meta charset="utf-8">
 		<!-- <link rel="stylesheet" href="styles/style.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="styles/flickr-style.css" type="text/css" media="screen" /> -->
-		<link rel="shortcut icon" href="images/hackerspace-grid.png" />
-		<link rel="icon" type="image/png" href="images/hackerspace-grid.png"/>
 		<!-- <script type="text/javascript" src="javascript/jquery-1.7.2.min.js"></script>
 		<script type="text/javascript" src="javascript/javascript.js"></script> -->
 		<%= stylesheet_link_tag    "application" %>
 		<%= javascript_include_tag "application" %>
 		<%= csrf_meta_tags %>
+		<title><%= full_title(yield(:title)) %></title>
 	</head>
 	<body>
 		<header>
