@@ -18,10 +18,10 @@
 			<div class="outline">
 				<ul>
 					<li class="<%= (yield(:page) == 'projects' ) ? 'current' : '' %>"><%= link_to 'Projects', projects_path %></li>
-					<li><a href="events.html">Events</a></li>
+					<li class="<%= (yield(:page) == 'events' ) ? 'current' : '' %>"><a href="events.html">Events</a></li>
 					<li class="<%= (yield(:page) == 'hackers' ) ? 'current' : '' %>"><%= link_to 'Hackers', hackers_path %></li>
 					<li><a href="http://blog.hackerspace-krk.pl/">Blog</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li class="<%= (yield(:page) == 'contact' ) ? 'current' : '' %>"><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -35,14 +35,14 @@
 	<footer>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home Page</a></li>
-				<li><a href="about.html">About</a></li>
+				<li class="<%= (yield(:page) == 'homepage' ) ? 'current' : '' %>"><a href="index.html">Home Page</a></li>
+				<li class="<%= (yield(:page) == 'about' ) ? 'current' : '' %>"><a href="about.html">About</a></li>
 				<li class="<%= (yield(:page) == 'projects' ) ? 'current' : '' %>"><%= link_to 'Projects', projects_path %></li>
-				<li><a href="events.html">Events</a></li>
+				<li class="<%= (yield(:page) == 'events' ) ? 'current' : '' %>"><a href="events.html">Events</a></li>
 				<li class="<%= (yield(:page) == 'hackers' ) ? 'current' : '' %>"><%= link_to 'Hackers', hackers_path %></li>
 				<li><a href="http://blog.hackerspace-krk.pl/">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="sponsors.html">Sponsors</a></li>
+				<li class="<%= (yield(:page) == 'contact' ) ? 'current' : '' %>"><a href="contact.html">Contact</a></li>
+				<li class="<%= (yield(:page) == 'sponsors' ) ? 'current' : '' %>"><a href="sponsors.html">Sponsors</a></li>
 			</ul>
 		</nav>
 		<br />
