@@ -17,9 +17,9 @@
 		<nav>
 			<div class="outline">
 				<ul>
-					<li><%= link_to 'Projects', projects_path %></li>
+					<li class="<%= (yield(:page) == 'projects' ) ? 'current' : '' %>"><%= link_to 'Projects', projects_path %></li>
 					<li><a href="events.html">Events</a></li>
-					<li><%= link_to 'Hackers', hackers_path %></li>
+					<li class="<%= (yield(:page) == 'hackers' ) ? 'current' : '' %>"><%= link_to 'Hackers', hackers_path %></li>
 					<li><a href="http://blog.hackerspace-krk.pl/">Blog</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -35,11 +35,11 @@
 	<footer>
 		<nav>
 			<ul>
-				<li class="current"><a href="index.html">Home Page</a></li>
+				<li><a href="index.html">Home Page</a></li>
 				<li><a href="about.html">About</a></li>
-				<li><%= link_to 'Projects', projects_path %></li>
+				<li class="<%= (yield(:page) == 'projects' ) ? 'current' : '' %>"><%= link_to 'Projects', projects_path %></li>
 				<li><a href="events.html">Events</a></li>
-				<li><%= link_to 'Hackers', hackers_path %></li>
+				<li class="<%= (yield(:page) == 'hackers' ) ? 'current' : '' %>"><%= link_to 'Hackers', hackers_path %></li>
 				<li><a href="http://blog.hackerspace-krk.pl/">Blog</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li><a href="sponsors.html">Sponsors</a></li>
