@@ -1,4 +1,4 @@
-<% provide(:title, 'Hacker') %>
+<% provide(:title, @hacker.name + " " + @hacker.nickname + " " + @hacker.surname) %>
 
 <%= link_to 'Edit', edit_hacker_path(@hacker) %> |
 <%= link_to 'Back', hackers_path %>
