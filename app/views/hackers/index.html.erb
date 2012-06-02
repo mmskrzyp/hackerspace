@@ -1,35 +1,16 @@
 <% provide(:page, 'hackers') %>
 <% provide(:title, 'Hackers') %>
+
 <h1>Listing hackers</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Surname</th>
-    <th>Nickname</th>
-    <th>Email</th>
-    <th>Bio</th>
-    <th>Avatar</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @hackers.each do |hacker| %>
-  <tr>
-    <td><%= hacker.name %></td>
-    <td><%= hacker.surname %></td>
-    <td><%= hacker.nickname %></td>
-    <td><%= hacker.email %></td>
-    <td><%= hacker.bio %></td>
-    <td><%= image_tag(hacker.avatar, :width => 50) if hacker.avatar.present? %></td>
-    <td><%= link_to 'Show', hacker %></td>
-    <td><%= link_to 'Edit', edit_hacker_path(hacker) %></td>
-    <td><%= link_to 'Destroy', hacker, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
 <%= link_to 'New Hacker', new_hacker_path %>
+<table>
+	<% @hackers.each do |hacker| %>
+	<tr>
+		<td><%= image_tag(hacker.avatar, :width => 50) if hacker.avatar.present? %></td>
+		<td><%= hacker.name %> <%= hacker.surname %> <%= hacker.nickname %></td>
+		<td><%= link_to 'Show', hacker %></td>
+		<td><%= link_to 'Edit', edit_hacker_path(hacker) %></td>
+		<td><%= link_to 'Destroy', hacker, confirm: 'Are you sure?', method: :delete %></td>
+	</tr>
+	<% end %>
+</table>
