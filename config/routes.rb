@@ -6,11 +6,21 @@ Hackerspace::Application.routes.draw do
   get "static_pages/about"
 
   get "static_pages/sponsors"
+  
+  get "static_pages/events"
 
   resources :projects
 
   resources :hackers
-
+  
+  match 'about', :to => 'static_pages#about', :as => "about"
+  match 'contact', :to => 'static_pages#contact', :as => "contact"
+  match 'events', :to => 'static_pages#events', :as => "events"
+  match 'home', :to => 'static_pages#home', :as => "home"
+  match 'sponsors', :to => 'static_pages#sponsors', :as => "sponsors"
+  
+  root :to => 'static_pages#home'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

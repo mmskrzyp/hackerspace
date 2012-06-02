@@ -1,17 +1,17 @@
-<% provide(:page, 'projects') %>
+<% provide(:page, 'hackers') %>
 <% provide(:title, @hacker.name + " " + @hacker.nickname + " " + @hacker.surname) %>
 
-<%= link_to 'Edit', edit_hacker_path(@hacker) %> |
-<%= link_to 'Back', hackers_path %>
+<%= link_to 'Go back to Hackers List', hackers_path %> |
+<%= link_to 'Edit', edit_hacker_path(@hacker) %>
 
 <div id="content">
 	<div id="data">
 		<p id="notice">
 			<%= notice %>
 		</p>
-		<%= image_tag(@hacker.avatar, :width => 150) if @hacker.avatar.present? %>
+		<%= image_tag(@hacker.avatar, :id=>'mainAvatar') if @hacker.avatar.present? %>
 		<h1><%= @hacker.name %> <%= @hacker.nickname %> <%= @hacker.surname %></h1>
-		<p>
+		<p id="bio">
 			<%= @hacker.bio %>
 		</p>
 		<h3>Tags:</h3>

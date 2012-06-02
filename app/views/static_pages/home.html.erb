@@ -1,4 +1,35 @@
 <% provide(:page, 'homepage') %>
 <% provide(:title, 'Homepage') %>
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+
+<div id="content">
+	<div id="data">
+		<div id="loginBar">
+			<form>
+				<input id=login name=login type=text placeholder="Login" required autofocus />
+				<input id=password name=password type=password placeholder="Password" required />
+				<a type=submit class="button">Log in</a>
+			</form>
+			<a href="">Log with Twitter</a>
+			<a href="">Log with Facebook</a>
+			<a href="">Log with GitHub</a>
+		</div>
+
+		<h2>Twitter</h2>
+		<div id="twitter_container" class="grayBackground">
+			Loading twitter widget...
+		</div>
+
+		<h2>Flickr</h2>
+		<table id="flickr_badge_uber_wrapper" cellpadding="0" cellspacing="10" border="0">
+			<tr id="flickr_container">
+				<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=5&display=latest&size=t&layout=h&source=user&user=78164588%40N06"></script>
+			</tr>
+		</table>
+	</div>
+
+	<aside>
+		<a href="newbie1.html" class="bigButton">1. Nie wiem o co chodzi</a>
+		<a href="newbie2.html" class="bigButton">2. Chcę zacząć</a>
+		<a href="newbie3.html" class="bigButton">3. Jestem wyjadaczem</a>
+	</aside>
+</div>

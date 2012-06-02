@@ -13,15 +13,15 @@
 	</head>
 	<body>
 		<header>
-		<a href="index.html"><%= image_tag("hackerspace-logo.png", :id=>'logo') %></a>
+			<%= link_to image_tag("hackerspace-logo.png", :id=>'logo', :alt=>'Hackerspace logo'), home_path %>
 		<nav>
 			<div class="outline">
 				<ul>
 					<li class="<%= (yield(:page) == 'projects' ) ? 'current' : '' %>"><%= link_to 'Projects', projects_path %></li>
-					<li class="<%= (yield(:page) == 'events' ) ? 'current' : '' %>"><a href="events.html">Events</a></li>
+					<li class="<%= (yield(:page) == 'events' ) ? 'current' : '' %>"><%= link_to 'Events', events_path %></li>
 					<li class="<%= (yield(:page) == 'hackers' ) ? 'current' : '' %>"><%= link_to 'Hackers', hackers_path %></li>
 					<li><a href="http://blog.hackerspace-krk.pl/">Blog</a></li>
-					<li class="<%= (yield(:page) == 'contact' ) ? 'current' : '' %>"><a href="contact.html">Contact</a></li>
+					<li class="<%= (yield(:page) == 'contact' ) ? 'current' : '' %>"><%= link_to 'Contact', contact_path %></li>
 				</ul>
 			</div>
 		</nav>
@@ -35,14 +35,14 @@
 	<footer>
 		<nav>
 			<ul>
-				<li class="<%= (yield(:page) == 'homepage' ) ? 'current' : '' %>"><a href="index.html">Home Page</a></li>
-				<li class="<%= (yield(:page) == 'about' ) ? 'current' : '' %>"><a href="about.html">About</a></li>
+				<li class="<%= (yield(:page) == 'homepage' ) ? 'current' : '' %>"><%= link_to 'Home Page', home_path %></li>
+				<li class="<%= (yield(:page) == 'about' ) ? 'current' : '' %>"><%= link_to 'About', about_path %></li>
 				<li class="<%= (yield(:page) == 'projects' ) ? 'current' : '' %>"><%= link_to 'Projects', projects_path %></li>
-				<li class="<%= (yield(:page) == 'events' ) ? 'current' : '' %>"><a href="events.html">Events</a></li>
+				<li class="<%= (yield(:page) == 'events' ) ? 'current' : '' %>"><%= link_to 'Events', events_path %></li>
 				<li class="<%= (yield(:page) == 'hackers' ) ? 'current' : '' %>"><%= link_to 'Hackers', hackers_path %></li>
 				<li><a href="http://blog.hackerspace-krk.pl/">Blog</a></li>
-				<li class="<%= (yield(:page) == 'contact' ) ? 'current' : '' %>"><a href="contact.html">Contact</a></li>
-				<li class="<%= (yield(:page) == 'sponsors' ) ? 'current' : '' %>"><a href="sponsors.html">Sponsors</a></li>
+				<li class="<%= (yield(:page) == 'contact' ) ? 'current' : '' %>"><%= link_to 'Contact', contact_path %></li>
+				<li class="<%= (yield(:page) == 'sponsors' ) ? 'current' : '' %>"><%= link_to 'Sponsors', sponsors_path %></li>
 			</ul>
 		</nav>
 		<br />
