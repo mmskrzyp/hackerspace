@@ -13,5 +13,14 @@ class StaticPagesController < ApplicationController
   
   def events
   end
+  
+  def newbie1
+  end
+  
+  def newbie2
+  end
+  
+  def newbie3
+  end
 
 end

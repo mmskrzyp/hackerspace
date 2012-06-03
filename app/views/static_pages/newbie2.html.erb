@@ -1,10 +1,18 @@
 <% provide(:page, 'about') %>
 <% provide(:title, 'About') %>
 
-<div>
-	<div class="bigButtonBar">
+<div id="content">
+	<div id="data">
+		<h2>Step 2 - I want to join</h2>
+		<p>
+			Contact us. All links you need are <a href="contact.html">here</a>.
+		</p>
+	</div>
+
+	<aside>
+		<br />
 		<%= link_to "1. I'm new here", newbie1_path, :class=>"bigButton" %>
 		<%= link_to "2. I want to join", newbie2_path, :class=>"bigButton" %>
 		<%= link_to "3. I know what's going on", newbie3_path, :class=>"bigButton" %>
-	</div>
+	</aside>
 </div>

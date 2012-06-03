@@ -1,0 +1,40 @@
+<% provide(:page, 'about') %>
+<% provide(:title, 'About') %>
+
+<div id="content">
+	<div id="data">
+		<h2>Step 3 - I know what's going on</h2>
+		<h3>Check out our projects and get involved</h3>
+		<ul>
+			<li>
+				<%= link_to 'List of projects', projects_path %>
+			</li>
+		</ul>
+		<h3>Check out other hackerspaces</h3>
+		<ul>
+			<li>
+				<a href="http://hackerspace.pl/">Hackerspace Warszawa</a>
+			</li>
+			<li>
+				<a href="http://szczecin.hackerspace.org.pl/">Hackerspace Szczecin</a>
+			</li>
+			<li>
+				<a href="http://nigmalabs.org/">Hackerspace Poznań (NigmaLabs)</a>
+			</li>
+			<li>
+				<a href="http://www.cohabitat.net/">Hackerspace Bukowiec (Cohabitat)</a>
+			</li>
+			<li>
+				<a href="http://hackerspaces.org/wiki/List_of_ALL_Hacker_Spaces">List of Hackerspaces around the world</a>
+			</li>
+		</ul>
+		<p></p>
+	</div>
+
+	<aside>
+		<br />
+		<%= link_to "1. I'm new here", newbie1_path, :class=>"bigButton" %>
+		<%= link_to "2. I want to join", newbie2_path, :class=>"bigButton" %>
+		<%= link_to "3. I know what's going on", newbie3_path, :class=>"bigButton" %>
+	</aside>
+</div>

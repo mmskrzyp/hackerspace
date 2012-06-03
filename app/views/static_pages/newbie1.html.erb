@@ -1,0 +1,26 @@
+<% provide(:page, 'about') %>
+<% provide(:title, 'About') %>
+
+<div id="content">
+	<div id="data">
+		<h2>Step 1 - I'm new here</h2>
+		<h3>What Hackerspace is (<a href="http://en.wikipedia.org/wiki/Hackerspace">from Wikipedia</a>):</h3>
+		<p>
+			A hackerspace or hackspace (also referred to as a hacklab, makerspace or creative space) is a location where people with common interests, often in computers, technology, science, digital or electronic art (but also in many other realms) can meet, socialise and/or collaborate. Hackerspaces can be viewed as open community labs incorporating elements of machine shops, workshops and/or studios where hackers can come together to share resources and knowledge to build and make things.
+			Many hackerspaces participate in the use and development of free software, open hardware, and alternative media.
+		</p>
+		<h3>Check out what we're doing:</h3>
+		<a href="http://blog.hackerspace-krk.pl">Our blog</a>
+		<h3>Hackerspace Noisebridge, San Francisco:</h3>
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/wamwklXWK4M" frameborder="0" allowfullscreen></iframe>
+		<h3>Hackerspace NYC Reisistor, New York:</h3>
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/58rbVFAroW4" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<aside>
+		<br />
+		<%= link_to "1. I'm new here", newbie1_path, :class=>"bigButton" %>
+		<%= link_to "2. I want to join", newbie2_path, :class=>"bigButton" %>
+		<%= link_to "3. I know what's going on", newbie3_path, :class=>"bigButton" %>
+	</aside>
+</div>
