@@ -231,6 +231,7 @@ footer p, p a {
 	background: #FFF;
 	background: url("grid-small.png");
 	text-align: center;
+	cursor: pointer;
 }
 
 .bigButton {
