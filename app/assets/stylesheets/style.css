@@ -145,15 +145,16 @@ header #login {
 
 #data {
 	display: table-cell;
-	width: 590px;
-	padding: 0 20px;
+	width: 510px;
+	padding: 0 40px;
 }
 
 aside {
 	display: table-cell;
-	width: 200px;
-	border-left: 1px dashed #7C7C7C;
-	padding-left: 20px;
+	width: 280px;
+	border-right: 1px dashed #7C7C7C;
+	padding-right: 10px;
+	padding-left: 30px;
 }
 
 #projects ul {
@@ -170,9 +171,11 @@ aside {
 	background-color: #EBEBEB;
 	border: 1px solid #EBEBEB;
 	border-radius: 5px 5px 5px 5px;
-	width: 100%;
-	width: 610px;
 	padding: 15px;
+}
+
+.twtr-widget {
+	width: 210px;
 }
 
 /* Footer */
@@ -186,7 +189,7 @@ footer {
 }
 
 footer nav {
-	margin-left: 50px;
+	margin-left: 55px;
 }
 
 footer nav ul {
@@ -235,9 +238,9 @@ footer p, p a {
 
 .bigButton {
 	display: block;
-	width: 150px;
+	width: 210px;
 	margin-bottom: 20px;
-	padding: 40px 15px;
+	padding: 20px 15px;
 	border: 2px solid;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -252,7 +255,7 @@ footer p, p a {
 
 .bigButtonBar {
 	height: 120px;
-	margin-left: 105px;
+	margin-left: 65px;
 }
 .bigButtonBar .bigButton {
 	height: 30px;
@@ -264,8 +267,8 @@ footer p, p a {
 	border: 1px dashed #7C7C7C;
 	width: 600px;
 	padding: 20px;
-	display: table;
-	/*display: none;*/
+	/*display: table;*/
+	display: none;
 }
 #loginBar form {
 	display: table-cell;

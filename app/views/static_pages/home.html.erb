@@ -2,18 +2,13 @@
 <% provide(:title, 'Homepage') %>
 
 <div id="content">
-	<div id="data">
-		<div id="loginBar">
-			<form>
-				<input id=login name=login type=text placeholder="Login" required autofocus />
-				<input id=password name=password type=password placeholder="Password" required />
-				<a type=submit class="button">Log in</a>
-			</form>
-			<a href="">Log with Twitter</a>
-			<a href="">Log with Facebook</a>
-			<a href="">Log with GitHub</a>
-		</div>
-
+	<aside>
+		<%= link_to "1. I'm new here", newbie1_path, :class=>"bigButton" %>
+		<%= link_to "2. I want to join", newbie2_path, :class=>"bigButton" %>
+		<%= link_to "3. I know what's going on", newbie3_path, :class=>"bigButton" %>
+		
+		</br>
+		
 		<h2>Twitter</h2>
 		<div id="twitter_container" class="grayBackground">
 			Loading twitter widget...
@@ -27,17 +22,35 @@
 			});
 		</script>
 
+	</aside>
+	
+	<div id="data">
+		<div id="loginBar">
+			<form>
+				<input id=login name=login type=text placeholder="Login" required autofocus />
+				<input id=password name=password type=password placeholder="Password" required />
+				<a type=submit class="button">Log in</a>
+			</form>
+			<a href="">Log with Twitter</a>
+			<a href="">Log with Facebook</a>
+			<a href="">Log with GitHub</a>
+		</div>
+		
+		<h2>Our sponsors</h2>
+		<p>//TODO</p>
+		
+		</br>
+		
+		<h2>Our partners</h2>
+		<p>//TODO</p>
+		
+		</br>
+
 		<h2>Flickr</h2>
 		<table id="flickr_badge_uber_wrapper" cellpadding="0" cellspacing="10" border="0">
 			<tr id="flickr_container">
-				<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=5&display=latest&size=t&layout=h&source=user&user=78164588%40N06"></script>
+				<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=4&display=latest&size=t&layout=h&source=user&user=78164588%40N06"></script>
 			</tr>
 		</table>
 	</div>
-
-	<aside>
-		<%= link_to "1. I'm new here", newbie1_path, :class=>"bigButton" %>
-		<%= link_to "2. I want to join", newbie2_path, :class=>"bigButton" %>
-		<%= link_to "3. I know what's going on", newbie3_path, :class=>"bigButton" %>
-	</aside>
 </div>

@@ -6,8 +6,8 @@ function load_tweets(){
     type: 'profile',
     rpp: 3,
     interval: 30000,
-    width: 550,
-    height: 150,
+    width: 210,
+    height: 300,
     theme: {
       shell: {
         background: '#EBEBEB',
