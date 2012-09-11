@@ -7,7 +7,7 @@ function load_tweets(){
     rpp: 3,
     interval: 30000,
     width: 210,
-    height: 300,
+    height: 275,
     theme: {
       shell: {
         background: '#EBEBEB',
@@ -20,7 +20,7 @@ function load_tweets(){
       }
     },
     features: {
-      scrollbar: true,
+      scrollbar: false,
       loop: false,
       live: true,
       behavior: 'all'

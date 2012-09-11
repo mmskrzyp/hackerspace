@@ -277,6 +277,22 @@ footer p, p a {
 	padding-right: 20px;
 }
 
+#contact {
+	display: table-row;
+}
+
+#contact div {
+	display: table-cell;
+	vertical-align: top;
+	width: 450px;
+	padding: 0 30px;
+}
+
+#contact div iframe {
+	margin-top: 10px;
+	border: 1px dashed #7C7C7C;
+}
+
 a.current, .current a {
 	text-decoration: underline;
 }
