@@ -52,23 +52,6 @@ img {
 	border: none;
 }
 
-#loginBar form input {
-	display: block;
-	width: 150px;
-	padding: 5px;
-	margin-bottom: 10px;
-	border: 2px solid #7C7C7C;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	box-shadow: 0 5px 25px -5px #000000;
-	-webkit-box-shadow: 0 5px 25px -5px #000000;
-	-moz-box-shadow: 0 5px 25px -5px #000000;
-	background: #EBEBEB;
-	/*background: url("grid-small.png");*/
-	text-align: center;
-}
-
 /* Header */
 header {
 	position: top;
@@ -84,57 +67,49 @@ header {
 	box-shadow: 0 5px 25px -5px #000000;
 	-webkit-box-shadow: 0 5px 25px -5px #000000;
 	-moz-box-shadow: 0 5px 25px -5px #000000;
-}
-
-header #logo {
-	margin: 36px 10px 10px 27px;
-	/*height: 130px;*/
-	width: 270px;
-	float: left;
-}
-
-header nav {
-	position: relative;
-	top: 32px;
-	margin-left: auto;
-	margin-right: 32px;
-	width: 540px;
-	height: 85px;
-	border: 1px dashed #7C7C7C;
-}
-
-.outline {
-	margin: 0px;
-	width: 540px;
-	height: 85px;
-	background: #EBEBEB;
-	background: url("background.png");
-	box-shadow: inset 0 5px 25px -5px #000000;
-	-webkit-box-shadow: inset 0 5px 25px -5px #000000;
-	-moz-box-shadow: inset 0 5px 25px -5px #000000;
-}
-
-header nav .outline ul {
-	position: relative;
-	top: 34px;
-	margin: 0;
-	margin-left: -8px;
-	list-style: none;
-}
-
-header nav .outline ul li {
-	margin: 0 20px;
-	display: block;
-	height: 25px;
-	float: left;
-}
-
-header nav .outline ul li a {
-	font-size: 16px;
-}
-
-header #login {
-	display: none;
+	#logo {
+    margin: 36px 10px 10px 27px;
+    width: 270px;
+    float: left;
+  }
+  nav {
+    position: relative;
+    top: 32px;
+    margin-left: auto;
+    margin-right: 32px;
+    width: 540px;
+    height: 85px;
+    border: 1px dashed #7C7C7C;
+    .outline {
+      margin: 0px;
+      width: 540px;
+      height: 85px;
+      background: #EBEBEB;
+      background: url("background.png");
+      box-shadow: inset 0 5px 25px -5px #000000;
+      -webkit-box-shadow: inset 0 5px 25px -5px #000000;
+      -moz-box-shadow: inset 0 5px 25px -5px #000000;
+      ul {
+        position: relative;
+        top: 34px;
+        margin: 0;
+        margin-left: -8px;
+        list-style: none;
+        li {
+          margin: 0 20px;
+          display: block;
+          height: 25px;
+          float: left;
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  #login {
+    display: none;
+  }
 }
 
 /* Content */
@@ -149,22 +124,18 @@ header #login {
 	padding: 0 40px;
 }
 
+#data + aside {
+    border-left: 1px dashed #7C7C7C;
+    border-right: none;
+    width: 200px;
+  }
+
 aside {
 	display: table-cell;
 	width: 280px;
 	border-right: 1px dashed #7C7C7C;
 	padding-right: 10px;
 	padding-left: 30px;
-}
-
-#projects ul {
-	list-style: none;
-	margin-left: -40px;
-	list-style: none;
-}
-
-#projects ul li {
-	margin-bottom: 10px;
 }
 
 .grayBackground {
@@ -186,39 +157,34 @@ footer {
 	height: 130px;
 	border-top: 1px dashed #7C7C7C;
 	text-align: center;
-}
-
-footer nav {
-	margin-left: 55px;
-}
-
-footer nav ul {
-	margin: 0;
-	margin-top: 34px;
-	list-style: none;
-}
-
-footer nav ul li {
-	margin: 0 20px;
-	display: block;
-	height: 25px;
-	float: left;
-}
-
-footer p, p a {
-	margin-top: 30px;
-	color: #7C7C7C;
+	nav {
+    margin-left: 55px;
+    ul {
+      margin: 0;
+      margin-top: 34px;
+      list-style: none;
+      li {
+        margin: 0 20px;
+        display: block;
+        height: 25px;
+        float: left;
+      }
+    }
+  }
+  p, p a {
+    margin-top: 30px;
+    color: #7C7C7C;
+  }
 }
 
 /* Elements */
 .inlineList {
 	margin-left: -30px;
 	list-style: none;
-}
-
-.inlineList li {
-	margin-right: 15px;
-	float: left;
+	li {
+		margin-right: 15px;
+		float: left;
+	}
 }
 
 .button {
@@ -255,42 +221,13 @@ footer p, p a {
 }
 
 .bigButtonBar {
-	height: 120px;
+	height: 80px;
 	margin-left: 65px;
-}
-.bigButtonBar .bigButton {
-	height: 30px;
-	float: left;
-	margin-right: 20px;
-}
-
-#loginBar {
-	border: 1px dashed #7C7C7C;
-	width: 600px;
-	padding: 20px;
-	/*display: table;*/
-	display: none;
-}
-#loginBar form {
-	display: table-cell;
-	width: 150px;
-	padding-right: 20px;
-}
-
-#contact {
-	display: table-row;
-}
-
-#contact div {
-	display: table-cell;
-	vertical-align: top;
-	width: 450px;
-	padding: 0 30px;
-}
-
-#contact div iframe {
-	margin-top: 10px;
-	border: 1px dashed #7C7C7C;
+	.bigButton {
+    padding: 30px 15px;
+    float: left;
+    margin-right: 20px;
+  }
 }
 
 a.current, .current a {

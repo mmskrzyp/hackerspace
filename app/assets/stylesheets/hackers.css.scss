@@ -1,3 +1,25 @@
+#hackers {
+  padding-left: 30px;
+}
+
+.hackerThumbnail {
+  float: left;
+  width: 230px;
+  height: 60px;
+  margin-top: 15px;
+  margin-right: 20px;
+  text-align: center;
+  img {
+   height: 60px;
+   float: left;
+   margin-right: 10px;
+  }
+  h3 a {
+    color: #7C7C7C;
+    text-shadow: 1px 1px #FFF;
+  }
+}
+
 #mainAvatar {
   float: left;
   margin-right: 20px;

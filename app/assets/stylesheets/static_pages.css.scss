@@ -1,3 +1,42 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* Home */
+#loginBar {
+  border: 1px dashed #7C7C7C;
+  width: 600px;
+  padding: 20px;
+  display: none;
+  form {
+    display: table-cell;
+    width: 150px;
+    padding-right: 20px;
+    input {
+      display: block;
+      width: 150px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 2px solid #7C7C7C;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      box-shadow: 0 5px 25px -5px #000000;
+      -webkit-box-shadow: 0 5px 25px -5px #000000;
+      -moz-box-shadow: 0 5px 25px -5px #000000;
+      background: #EBEBEB;
+      text-align: center;
+    }
+  }
+}
+
+/* Contact */
+#contact {
+  display: table-row;
+  div {
+    display: table-cell;
+    vertical-align: top;
+    width: 450px;
+    padding: 0 30px;
+    iframe {
+      margin-top: 30px;
+      border: 1px dashed #7C7C7C;
+    }
+  }
+}
