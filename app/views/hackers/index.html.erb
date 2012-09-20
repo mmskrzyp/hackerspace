@@ -4,19 +4,13 @@
 <div id="hackers">
 	<h1>Listing hackers</h1>
 	<%= link_to 'New Hacker', new_hacker_path %>
+
 	</br>
 	<% @hackers.each do |hacker| %>
-	<div class="grayBackground hackerThumbnail">
-		<%= link_to image_tag(hacker.avatar), hacker if hacker.avatar.present? %>
-		<h3><%= link_to (hacker.name + ' ' + hacker.surname + ' ' + hacker.nickname), hacker %></h3>
-	</div>	
-	<!-- <tr>
-		<td><%= image_tag(hacker.avatar, :width => 50) if hacker.avatar.present? %></td>
-		<td><%= hacker.name %> <%= hacker.surname %> <%= hacker.nickname %></td>
-		<td><%= link_to 'Show', hacker %></td>
-		<td><%= link_to 'Edit', edit_hacker_path(hacker) %></td>
-		<td><%= link_to 'Destroy', hacker, confirm: 'Are you sure?', method: :delete %></td>
-	</tr> -->
+		<div class="grayBackground hackerThumbnail">
+			<%= link_to image_tag(hacker.avatar), hacker if hacker.avatar.present? %>
+			<h3><%= link_to (hacker.name + ' ' + hacker.surname + ' ' + hacker.nickname), hacker %></h3>
+		</div>
 	<% end %>
 	<div style="clear: both"></div>
 </div>
