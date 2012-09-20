@@ -5,16 +5,20 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
+
 group :development do
   gem 'sqlite3', '1.3.5'
+  gem 'quiet_assets' # Just to get rid of all this get request in development logs
 end
 
 group :production do
   gem 'pg'
 end
 
-gem 'carrierwave'
-
+gem 'carrierwave' #for handling uploads
+gem 'rails_admin' #for pretty admin interface
+gem 'cancan' #admins authorization
+gem 'devise' #required by rails_admin - handles authentication
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -39,3 +43,4 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+

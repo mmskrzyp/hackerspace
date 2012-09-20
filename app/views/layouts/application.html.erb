@@ -27,18 +27,16 @@
 		<%= yield %>
 
 	</body>
-	
+
 	<footer>
 		<nav>
 			<ul>
-				<li class="<%= (yield(:page) == 'homepage' ) ? 'current' : '' %>"><%= link_to 'Home Page', home_path %></li>
-				<li class="<%= (yield(:page) == 'about' ) ? 'current' : '' %>"><%= link_to 'About', about_path %></li>
-				<li class="<%= (yield(:page) == 'projects' ) ? 'current' : '' %>"><%= link_to 'Projects', projects_path %></li>
-				<li class="<%= (yield(:page) == 'events' ) ? 'current' : '' %>"><%= link_to 'Events', events_path %></li>
-				<li class="<%= (yield(:page) == 'hackers' ) ? 'current' : '' %>"><%= link_to 'Hackers', hackers_path %></li>
-				<li><a href="http://blog.hackerspace-krk.pl/">Blog</a></li>
-				<li class="<%= (yield(:page) == 'contact' ) ? 'current' : '' %>"><%= link_to 'Contact', contact_path %></li>
-				<li class="<%= (yield(:page) == 'sponsors' ) ? 'current' : '' %>"><%= link_to 'Sponsors', sponsors_path %></li>
+				<% StaticPageConstraint::STATIC_PAGES[0, 6].each do |page| %>
+					<li class="<%= 'current' if (params[:action] == page) %>">
+						<%= link_to page.capitalize, eval("#{page}_path") %>
+					</li>
+				<% end %>
+				<li><a href="http://blog.hackerspace-krk.pl/" target="_blank">Blog</a></li>
 			</ul>
 		</nav>
 		<br />

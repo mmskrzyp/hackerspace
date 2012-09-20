@@ -1,26 +1,14 @@
 Hackerspace::Application.routes.draw do
-  get "static_pages/home"
 
-  get "static_pages/contact"
-
-  get "static_pages/about"
-
-  get "static_pages/sponsors"
-
-  get "static_pages/events"
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :users
 
   resources :projects
-
   resources :hackers
 
-  match 'about', :to => 'static_pages#about', :as => "about"
-  match 'contact', :to => 'static_pages#contact', :as => "contact"
-  match 'events', :to => 'static_pages#events', :as => "events"
-  match 'home', :to => 'static_pages#home', :as => "home"
-  match 'newbie1', :to => 'static_pages#newbie1', :as => "newbie1"
-  match 'newbie2', :to => 'static_pages#newbie2', :as => "newbie2"
-  match 'newbie3', :to => 'static_pages#newbie3', :as => "newbie3"
-  match 'sponsors', :to => 'static_pages#sponsors', :as => "sponsors"
+  StaticPageConstraint::STATIC_PAGES.each do |page|
+    match '/:action', controller: 'static_pages', action: page, constraints: StaticPageConstraint, as: page.to_sym
+  end
 
   root :to => 'static_pages#home'
 
