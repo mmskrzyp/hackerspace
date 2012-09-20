@@ -7,7 +7,7 @@ Hackerspace::Application.routes.draw do
   resources :hackers
 
   StaticPageConstraint::STATIC_PAGES.each do |page|
-    match '/:action', controller: 'static_pages', constraints: StaticPageConstraint, as: page.to_sym
+    match '/:action', controller: 'static_pages', action: page, constraints: StaticPageConstraint, as: page.to_sym
   end
 
   root :to => 'static_pages#home'
