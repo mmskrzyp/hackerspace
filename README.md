@@ -1,6 +1,6 @@
 # Website for Hackerspace Kraków + simple project manager
 
-## Check out: http://hackerspace-krk.pl
+ Check out: http://hackerspace-krk.pl
 
 ## In order to run it:
 
@@ -11,5 +11,7 @@
     rails s
 
 ## To see admin interface
-  Go to localhost:300/admin
-  use data from db/seed.rb to login
+
+  Go to http://localhost:3000/admin
+
+  Use data from [db/seeds.rb](https://github.com/phocke/hackerspace/blob/master/db/seeds.rb) to login
